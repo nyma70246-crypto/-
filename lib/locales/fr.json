@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "Workers Connect",
+    "description": "Plateforme de Communication des Travailleurs Professionnels"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "search": "Recherche",
+    "messages": "Messages",
+    "profile": "Profil"
+  },
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "signup": "S'inscrire",
+    "welcome": "Bienvenue",
+    "loginAs": "Se connecter en tant que"
+  },
+  "home": {
+    "title": "Bienvenue!",
+    "nearbyWorkers": "Travailleurs à proximité",
+    "nearbyDescription": "Découvrez des travailleurs professionnels près de vous et choisissez le meilleur pour vos besoins",
+    "features": "Caractéristiques principales",
+    "getStarted": "Commencer",
+    "getStartedDescription": "Allez à l'onglet Recherche pour explorer plus de travailleurs et de services disponibles"
+  },
+  "search": {
+    "title": "Recherche",
+    "searchPlaceholder": "Rechercher une profession ou un travailleur...",
+    "distance": "Distance",
+    "profession": "Profession",
+    "noResults": "Aucun résultat trouvé",
+    "tryChanging": "Essayez de modifier vos critères de recherche",
+    "km": "km",
+    "hourlyRate": "SAR/heure"
+  },
+  "messages": {
+    "title": "Messages",
+    "searchPlaceholder": "Rechercher des conversations...",
+    "noConversations": "Aucune conversation",
+    "startConversation": "Commencer une nouvelle conversation avec un travailleur",
+    "now": "Maintenant",
+    "minutesAgo": "minute",
+    "hoursAgo": "heure",
+    "daysAgo": "jours",
+    "typing": "en train d'écrire..."
+  },
+  "chat": {
+    "title": "Chat",
+    "messagePlaceholder": "Tapez un message...",
+    "send": "Envoyer",
+    "addImage": "Ajouter une image",
+    "online": "En ligne",
+    "offline": "Hors ligne",
+    "typing": "en train d'écrire...",
+    "noMessages": "Aucun message pour le moment"
+  },
+  "profile": {
+    "title": "Profil",
+    "contactInfo": "Informations de contact",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "price": "Prix",
+    "bio": "Biographie",
+    "portfolio": "Portfolio",
+    "noPortfolio": "Aucune photo ajoutée pour le moment",
+    "addPhoto": "Ajouter une photo",
+    "editProfile": "Modifier le profil",
+    "settings": "Paramètres",
+    "language": "Langue",
+    "notifications": "Notifications",
+    "privacy": "Confidentialité",
+    "about": "À propos de l'application",
+    "updateBio": "Mettre à jour la biographie"
+  },
+  "ratings": {
+    "title": "Évaluations",
+    "addRating": "Ajouter une évaluation",
+    "rating": "Évaluation",
+    "comment": "Commentaire",
+    "submit": "Soumettre",
+    "average": "Évaluation moyenne",
+    "reviews": "Avis",
+    "noReviews": "Aucun avis pour le moment"
+  },
+  "map": {
+    "title": "Carte",
+    "nearbyWorkers": "Travailleurs à proximité",
+    "filterByProfession": "Filtrer par profession",
+    "filterByDistance": "Filtrer par distance",
+    "viewProfile": "Voir le profil",
+    "contact": "Contacter"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "retry": "Réessayer"
+  }
+}
