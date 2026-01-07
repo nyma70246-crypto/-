@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "Workers Connect",
+    "description": "Professional Workers Communication Platform"
+  },
+  "navigation": {
+    "home": "Home",
+    "search": "Search",
+    "messages": "Messages",
+    "profile": "Profile"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "signup": "Sign Up",
+    "welcome": "Welcome",
+    "loginAs": "Login as"
+  },
+  "home": {
+    "title": "Welcome!",
+    "nearbyWorkers": "Nearby Workers",
+    "nearbyDescription": "Discover professional workers near you and choose the best for your needs",
+    "features": "Key Features",
+    "getStarted": "Get Started",
+    "getStartedDescription": "Go to the Search tab to explore more workers and available services"
+  },
+  "search": {
+    "title": "Search",
+    "searchPlaceholder": "Search for profession or worker...",
+    "distance": "Distance",
+    "profession": "Profession",
+    "noResults": "No results found",
+    "tryChanging": "Try changing your search criteria",
+    "km": "km",
+    "hourlyRate": "SAR/hour"
+  },
+  "messages": {
+    "title": "Messages",
+    "searchPlaceholder": "Search conversations...",
+    "noConversations": "No conversations",
+    "startConversation": "Start a new conversation with a worker",
+    "now": "Now",
+    "minutesAgo": "minute",
+    "hoursAgo": "hour",
+    "daysAgo": "days",
+    "typing": "typing..."
+  },
+  "chat": {
+    "title": "Chat",
+    "messagePlaceholder": "Type a message...",
+    "send": "Send",
+    "addImage": "Add Image",
+    "online": "Online",
+    "offline": "Offline",
+    "typing": "typing...",
+    "noMessages": "No messages yet"
+  },
+  "profile": {
+    "title": "Profile",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "price": "Price",
+    "bio": "Bio",
+    "portfolio": "Portfolio",
+    "noPortfolio": "No photos added yet",
+    "addPhoto": "Add Photo",
+    "editProfile": "Edit Profile",
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "privacy": "Privacy",
+    "about": "About App",
+    "updateBio": "Update Bio"
+  },
+  "ratings": {
+    "title": "Ratings",
+    "addRating": "Add Rating",
+    "rating": "Rating",
+    "comment": "Comment",
+    "submit": "Submit",
+    "average": "Average Rating",
+    "reviews": "Reviews",
+    "noReviews": "No reviews yet"
+  },
+  "map": {
+    "title": "Map",
+    "nearbyWorkers": "Nearby Workers",
+    "filterByProfession": "Filter by Profession",
+    "filterByDistance": "Filter by Distance",
+    "viewProfile": "View Profile",
+    "contact": "Contact"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "retry": "Retry"
+  }
+}

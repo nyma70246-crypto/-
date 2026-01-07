@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "Workers Connect",
+    "description": "منصة تواصل العمال المحترفين"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "search": "البحث",
+    "messages": "الرسائل",
+    "profile": "الملف الشخصي"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "signup": "إنشاء حساب",
+    "welcome": "أهلاً بك",
+    "loginAs": "تسجيل الدخول باسم"
+  },
+  "home": {
+    "title": "أهلاً بك!",
+    "nearbyWorkers": "العمال القريبين منك",
+    "nearbyDescription": "اكتشف العمال المحترفين بالقرب منك واختر الأفضل لاحتياجاتك",
+    "features": "الميزات الرئيسية",
+    "getStarted": "ابدأ الآن",
+    "getStartedDescription": "انتقل إلى تبويب البحث لاستكشاف المزيد من العمال والخدمات المتاحة"
+  },
+  "search": {
+    "title": "البحث",
+    "searchPlaceholder": "ابحث عن مهنة أو عامل...",
+    "distance": "المسافة",
+    "profession": "المهنة",
+    "noResults": "لا توجد نتائج",
+    "tryChanging": "حاول تغيير معايير البحث",
+    "km": "كم",
+    "hourlyRate": "ريال/ساعة"
+  },
+  "messages": {
+    "title": "الرسائل",
+    "searchPlaceholder": "ابحث عن محادثة...",
+    "noConversations": "لا توجد محادثات",
+    "startConversation": "ابدأ محادثة جديدة مع عامل",
+    "now": "الآن",
+    "minutesAgo": "دقيقة",
+    "hoursAgo": "ساعة",
+    "daysAgo": "أيام",
+    "typing": "يكتب..."
+  },
+  "chat": {
+    "title": "الدردشة",
+    "messagePlaceholder": "اكتب رسالة...",
+    "send": "إرسال",
+    "addImage": "إضافة صورة",
+    "online": "متصل",
+    "offline": "غير متصل",
+    "typing": "يكتب...",
+    "noMessages": "لا توجد رسائل بعد"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "contactInfo": "معلومات التواصل",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "price": "السعر",
+    "bio": "نبذة شخصية",
+    "portfolio": "معرض الأعمال",
+    "noPortfolio": "لم تضف أي صور بعد",
+    "addPhoto": "إضافة صورة",
+    "editProfile": "تعديل الملف الشخصي",
+    "settings": "الإعدادات",
+    "language": "اللغة",
+    "notifications": "الإشعارات",
+    "privacy": "الخصوصية",
+    "about": "حول التطبيق",
+    "updateBio": "تحديث النبذة"
+  },
+  "ratings": {
+    "title": "التقييمات",
+    "addRating": "إضافة تقييم",
+    "rating": "التقييم",
+    "comment": "التعليق",
+    "submit": "إرسال",
+    "average": "متوسط التقييم",
+    "reviews": "المراجعات",
+    "noReviews": "لا توجد مراجعات بعد"
+  },
+  "map": {
+    "title": "الخريطة",
+    "nearbyWorkers": "العمال القريبين",
+    "filterByProfession": "تصفية حسب المهنة",
+    "filterByDistance": "تصفية حسب المسافة",
+    "viewProfile": "عرض الملف الشخصي",
+    "contact": "تواصل"
+  },
+  "common": {
+    "ok": "حسناً",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "success": "تم بنجاح",
+    "retry": "إعادة محاولة"
+  }
+}
