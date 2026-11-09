@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'expo-router';
 import { StyleSheet, View, Pressable, ScrollView, Image, FlatList, Alert } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -14,11 +15,13 @@ export default function ProfileScreen() {
   const colorScheme = useColorScheme();
   const colors = Colors[colorScheme ?? 'light'];
   const insets = useSafeAreaInsets();
+  const router = useRouter();
   const { user, logout } = useAuth();
 
   const [profileImage, setProfileImage] = useState<string | null>(null);
   const [portfolio, setPortfolio] = useState<ImageAsset[]>([]);
   const [isEditing, setIsEditing] = useState(false);
+  const [loggingOut, setLoggingOut] = useState(false);
 
   // Mock user data
   const mockProfile = {
@@ -65,6 +68,26 @@ export default function ProfileScreen() {
 
   const handleRemovePortfolioImage = (index: number) => {
     setPortfolio(portfolio.filter((_, i) => i !== index));
+  };
+  const handleOpenSettings = () => router.push('/settings');
+  const handleLogout = () => {
+    if (loggingOut) return;
+    Alert.alert('تسجيل الخروج', 'هل تريد تسجيل الخروج من الحساب؟', [
+      { text: 'إلغاء', style: 'cancel' },
+      {
+        text: 'تسجيل الخروج',
+        style: 'destructive',
+        onPress: async () => {
+          setLoggingOut(true);
+          try {
+            await logout();
+            router.replace('/');
+          } finally {
+            setLoggingOut(false);
+          }
+        },
+      },
+    ]);
   };
 
   const renderPortfolioItem = ({ item, index }: { item: ImageAsset; index: number }) => (
@@ -207,15 +230,23 @@ export default function ProfileScreen() {
         {/* Settings */}
         <View style={styles.settingsSection}>
           <Pressable
+            onPress={handleOpenSettings}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="فتح الإعدادات"
             style={[styles.button, { backgroundColor: colors.surface }]}
           >
             <ThemedText style={styles.buttonTextDark}>⚙️ الإعدادات</ThemedText>
           </Pressable>
           <Pressable
-            onPress={logout}
-            style={[styles.button, { backgroundColor: colors.error }]}
+            onPress={handleLogout}
+            disabled={loggingOut}
+            hitSlop={8}
+            accessibilityRole="button"
+            accessibilityLabel="تسجيل الخروج"
+            style={[styles.button, { backgroundColor: colors.error }, loggingOut && styles.disabled]}
           >
-            <ThemedText style={styles.buttonText}>تسجيل الخروج</ThemedText>
+            <ThemedText style={styles.buttonText}>{loggingOut ? 'جارٍ تسجيل الخروج...' : 'تسجيل الخروج'}</ThemedText>
           </Pressable>
         </View>
       </ThemedView>
@@ -372,6 +403,9 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.medium,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  disabled: {
+    opacity: 0.6,
   },
   buttonText: {
     color: '#fff',
